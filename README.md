@@ -1,28 +1,22 @@
-# Topic Modeling CS Papers
+# Topic Modeling of Computer Systems Research Papers
 
-This project was my undergraduate senior thesis at Reed College, completed in May 2019. The goal was to build an unsupervised system to automatically classify academic papers from major computer systems conferences into meaningful research subfields — without relying on pre-existing labels.
+This repository contains the code and data processing pipeline for a research project exploring unsupervised classification and topic modeling in academic computer systems literature.
 
-## Summary
+The project evaluates several feature representations—bag-of-words, tf-idf vectors, and LDA topic distributions—and compares their clustering performance using k-means. The goal was to replicate human-assigned conference sessions through unsupervised methods.
 
-Using a corpus of 2,500+ CS papers, the project applied:
+Key components include:
+- Preprocessing a corpus of 2,500+ conference papers
+- Implementing LDA using Gensim and scikit-learn
+- Clustering and evaluation with k-means and cosine similarity
+- Visualization and analysis of discovered topic structure
 
-- **Latent Dirichlet Allocation (LDA)** to extract latent topic distributions
-- **k-means clustering** to form subfields based on topic vectors
-- **TF-IDF encoding** and **bag-of-words** as alternative baselines
-- Evaluation against human-generated categories from conference metadata
+---
 
-The classifier successfully reconstructed recognizable research areas such as networking, databases, security, and cloud systems — demonstrating the feasibility of topic modeling for organizing academic literature.
+**Technologies Used:**  
+Python · scikit-learn · Gensim · NLTK · Matplotlib
 
-## Tools Used
+**Status:**  
+Archived project from 2019. Code is preserved as originally written during a year-long research effort.
 
-- Python, scikit-learn, gensim, matplotlib, NLTK
-- Manual preprocessing of PDF corpora from SIGCOMM, OSDI, NSDI, and other conferences
-
-## Status
-
-This repo is currently a placeholder. Code and cleaned data may be added in the future, pending licensing and cleanup.
-
-## Contact
-
-📫 Reach me at `tanmay [dot] dubey [dot] nine five one four [at] gmail [dot] com`  
-🔗 Also see my LinkedIn: [linkedin.com/in/tanmay-dubey](https://linkedin.com/in/tanmay-dubey)
+**Author:**  
+Tanmay Dubey  
